@@ -1,0 +1,43 @@
+<%- include ("./partials/header") %>
+
+
+    <div class="jumbotron">
+        <div class="container2">
+            <br>
+            <h1>Contact Us</h1>
+            <br>
+            <p>Feel free to contact us. We are always open for our customer's valuable suggestions.</p>
+            <p>For collaborations, fill out the form and we will reach out to<br>you within 180 mins.</p>
+            <br>
+            <div class="card">
+                <p><strong>Brass World</strong></p>
+                <p>14, Rajan Enclave</p>
+                <p>Moradabad -244001</p>
+                <p>India</p>
+                <p>+91 8979328094</p>
+                <p>kartikey@brassworld.com</p>
+
+                <form class="form" action="/aboutus" method="POST">
+                    <div>
+                        <label for="name">Name: </label>
+                        <input name="name" class="form_item" type="text" id="name" required>
+
+                        <label for="email">Email: </label>
+                        <input name="email" class="form_item" type="email" id="email" required>
+<br>
+                        <label for="subject">Subject: </label>
+                        <input name="subject" class="form_item" type="text" id="subject" required>
+<br>
+                        <label for="message">Message: </label>
+                        <input name="message" class="form_item" type="text" id="message" placeholder="Type your message here..." required>
+                    </div>
+                    <button>Submit</button>
+                </form>
+            </div>
+
+            
+        </div>
+    </div>
+
+</body>
+</html>

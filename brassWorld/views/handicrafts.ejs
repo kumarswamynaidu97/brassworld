@@ -1,0 +1,24 @@
+<%- include ("./partials/header") %>
+
+
+    <h1 class="heading">Handicrafts</h1>
+
+    <% for(let handicraft of handicrafts) { %>
+    <div class="row product">
+        <div class="column">
+            <img src=<%= handicraft.url %> alt="" width="450" height="400">
+        </div>
+        <div class="column">
+            <h2><%= handicraft.title %></h2>
+            <p class="info"><%= handicraft.description %></p>
+            <p style="font-size: larger;">Rs. <%= handicraft.price %></p>
+
+            <button>BUY</button>
+            <button>CART</button>
+        </div>
+    </div>
+    <hr>
+    <% } %>
+
+</body>
+</html>

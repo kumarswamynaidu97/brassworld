@@ -1,0 +1,24 @@
+<%- include ("./partials/header") %>
+
+
+    <h1 class="heading">Diyas & Lanterns</h1>
+
+    <% for(let diyaLatern of diyaLaterns) { %>
+    <div class="row product">
+        <div class="column">
+            <img src=<%= diyaLatern.url %> alt="" width="450" height="400">
+        </div>
+        <div class="column">
+            <h2><%= diyaLatern.title %></h2>
+            <p class="info"><%= diyaLatern.description %></p>
+            <p style="font-size: larger;">Rs. <%= diyaLatern.price %></p>
+
+            <button>BUY</button>
+            <button>CART</button>
+        </div>
+    </div>
+    <hr>
+    <% } %>
+
+</body>
+</html>

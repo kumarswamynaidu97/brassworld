@@ -1,0 +1,24 @@
+<%- include ("./partials/header") %>
+
+
+    <h1 class="heading">Wall Decors</h1>
+
+    <% for(let wallDecor of wallDecors) { %>
+    <div class="row product">
+        <div class="column">
+            <img src=<%= wallDecor.url %> alt="" width="450" height="400">
+        </div>
+        <div class="column">
+            <h2><%= wallDecor.title %></h2>
+            <p class="info"><%= wallDecor.description %></p>
+            <p style="font-size: larger;">Rs. <%= wallDecor.price %></p>
+
+            <button>BUY</button>
+            <button>CART</button>
+        </div>
+    </div>
+    <hr>
+    <% } %>
+
+</body>
+</html>
